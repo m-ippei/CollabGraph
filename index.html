@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InspirationGraphApp</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body oncontextmenu="return false;">
+    <canvas id="canvas0"></canvas>
+    <canvas id="canvas1"></canvas>
+    <div class="contextmenu" id="contextmenu0">
+        <input type="text" id="UIv1" class="uitext" placeholder="New Title">
+        <button onclick="g.hc.NodeAdd()">
+            Add
+        </button>
+        <button onclick="g.show_JSON()">
+            Show
+        </button>
+        <button onclick="g.switch_expands()">
+            Switch expands
+        </button>
+        <button onclick="g.removeAll()">
+            Remove all
+        </button>
+        <input type="file" id="FileRead" class="uiinput">
+        <button onclick="g.hc.close()">
+            Close
+        </button>
+    </div>
+    <div class="contextmenu" id="list_contextmenu">
+        <button onclick="g.hc.editTitle()">
+            Edit title
+        </button>
+        <button onclick="g.hc.NodeDelete()">
+            Delete
+        </button>
+        <button onclick="g.hc.close()">
+            Close
+        </button>
+    </div>
+    <ul id="ul0"></ul>
+    <script src="./public/js/socket.io.slim.js"></script>
+    <script src="./public/JSON_DRAWER/JSON_DRAWER.js" type="module"></script>
+    <script src="./public/JSON_DRAWER/setDrawNode.js" type="module"></script>
+    <script src="./public/Controller/canvasController.js" type="module"></script>
+    <script src="./public/Controller/HandleController.js" type="module"></script>
+    <script src="./public/Controller/moveController.js" type="module"></script>
+    <script src="./public/Socket/socketReceiver.js" type="module"></script>
+    <script src="./public/Socket/socketController.js" type="module"></script>
+    <script src="./public/main.js" type="module"></script>
+</body>
+
+</html>

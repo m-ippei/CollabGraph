@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "PosX": 100,
+        "PosY": 100,
+        "title": "QuickDrag -> DrawEdge",
+        "target": [
+            1
+        ]
+    },
+    {
+        "id": 1,
+        "PosX": 200,
+        "PosY": 200,
+        "title": "Hold on Label -> Move",
+        "target": [
+            2
+        ]
+    },
+    {
+        "id": 2,
+        "PosX": 300,
+        "PosY": 300,
+        "title": "RightClick on Label -> Edit Title or Delete",
+        "target": []
+    },
+    {
+        "id": 3,
+        "PosX": 400,
+        "PosY": 100,
+        "title": "RightClick on Window -> Menu",
+        "target": []
+    },
+    {
+        "id": 4,
+        "PosX": 10,
+        "PosY": 10,
+        "title": "Welcome to InspirationGrapheApp! Creating Collective Intelligence",
+        "target": []
+    }
+]

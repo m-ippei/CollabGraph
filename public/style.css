@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #FBFAF3;
+    --label-border: rgba(0, 0, 0, 0.1);
+    --node-hover: rgba(0, 0, 0, 0.2);
+    --text-color: #2F2725;
+    --text-bg-color: #FBFDFF;
+    --context-bg-border: #4B2D16;
+    --context-bg-color: rgba(251, 250, 243, 1);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    background-color: var(--bg-color);
+}
+
+canvas {
+    position: absolute;
+    top: 0; 
+}
+
+label {
+    padding: 5px;
+    border: 1px solid var(--label-border);
+}
+
+#ul0 {
+    position: absolute;
+    margin:0;
+    list-style: none;
+}
+
+.Nodes {
+    white-space: nowrap;
+    position: absolute;
+    
+}
+
+.Nodes:hover {
+    box-shadow: 0px 2px 5px var(--node-hover);
+}
+
+.titles {
+    color: var(--text-color);
+    background-color: var(--text-bg-color);
+}
+
+.contextmenu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    border: 1px solid var(--context-bg-border);
+    z-index: 10;
+    background-color: var(--context-bg-color);
+}
+
+#list_contextmenu {
+    width: 5em;
+}
